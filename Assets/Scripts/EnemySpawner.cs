@@ -12,7 +12,7 @@ public class EnemySpawner : MonoBehaviour
     private int _poolCapacity = 10;
     private int _poolMaxSize = 15;
 
-    private void Awake()//сделать коллекцию спавнеров
+    private void Awake()
     {
         _enemyPool = new ObjectPool<Enemy>(
             createFunc: () => Instantiate(_prefab),

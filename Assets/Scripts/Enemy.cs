@@ -6,9 +6,9 @@ public class Enemy : MonoBehaviour
 {
     private Rigidbody _rigidbody;
 
-    public event Action<Enemy> EndWay;
-
     private float _lifeWay = 10.0f;
+
+    public event Action<Enemy> EndWay;
 
     private void Awake()
     {
